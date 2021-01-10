@@ -56,5 +56,5 @@ jobs:
           cd /root/study-project/edu-boss-project
           wget https://github.com/qq794877194/edu-boss-project/releases/latest/download/release.tgz -O release.tgz
           tar -zxvf release.tgz
-          npm i http-proxy-middleware
+          npm i http-proxy-middleware express
           pm2 start node --name edu-boos-project -- test-serve/app.js
