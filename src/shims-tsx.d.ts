@@ -1,4 +1,4 @@
-import Vue, { VNode } from 'vue'
+import Vue, { VNode } from 'vue';
 
 declare global {
   namespace JSX {
@@ -9,5 +9,11 @@ declare global {
     interface IntrinsicElements {
       [elem: string]: any;
     }
+  }
+}
+
+declare module 'vue/types/vue' {
+  interface Vue {
+    [key: string]: any;
   }
 }

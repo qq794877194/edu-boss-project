@@ -1,22 +1,26 @@
 <template>
-  <div id="app">
-    <router-view/>
+  <div class="role">
+    <roleList />
   </div>
 </template>
+
 <script lang="ts">
 import Vue from 'vue';
+import roleList from './components/list.vue';
 
 export default Vue.extend({
+  name: 'role',
   data () {
     return {
-      a: 1,
-      b: '2'
+
     };
   },
-  methods: {
-    test () {
-
-    }
+  components: {
+    roleList
   }
 });
 </script>
+
+<style scoped>
+
+</style>
